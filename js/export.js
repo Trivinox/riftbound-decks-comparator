@@ -21,9 +21,9 @@ function exportAsText(cardStats, bfStats, validDecks, legend) {
     ].join('\t'));
   }
 
-  lines.push('', 'BATTLEFIELDS', ['Battlefield', 'Categoría', '% mazos'].join('\t'));
+  lines.push('', 'BATTLEFIELDS', ['Battlefield', '% mazos'].join('\t'));
   for (const s of bfStats) {
-    lines.push([s.name, s.category, `${s.frequencyPct.toFixed(0)}%`].join('\t'));
+    lines.push([s.name, `${s.frequencyPct.toFixed(0)}%`].join('\t'));
   }
 
   const blob = new Blob([lines.join('\n')], { type: 'text/plain;charset=utf-8' });

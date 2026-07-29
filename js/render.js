@@ -118,7 +118,6 @@ function buildBFRow(stat, validDecks) {
   tr.className = 'table-row-clickable';
   tr.innerHTML = `
     <td>${escapeHtml(stat.name)}</td>
-    <td><span class="badge ${BADGE_CLASS[stat.category]}">${escapeHtml(stat.category)}</span></td>
     <td>${stat.frequencyPct.toFixed(0)}%</td>
   `;
   tr.addEventListener('click', () => openModal(stat, validDecks, true));

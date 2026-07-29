@@ -13,16 +13,20 @@
       <h1>Riftbound Deck Comparator</h1>
       <p>Ingresa mazos en formato Tourney de riftbound.gg para saber qué cartas priorizar.</p>
     </header>
+  </div>
 
-    <section class="input-section">
+  <section class="deck-section">
+    <div class="deck-section-inner">
       <div id="deck-inputs"></div>
 
       <div class="input-actions">
         <button id="btn-add-deck" class="btn btn-secondary">+ Agregar mazo</button>
         <button id="btn-compare" class="btn btn-primary">Comparar mazos</button>
       </div>
-    </section>
+    </div>
+  </section>
 
+  <div class="container container-results">
     <div id="legend-error-banner" class="error-banner hidden"></div>
     <p id="analysis-summary" class="summary-bar hidden"></p>
 
@@ -53,7 +57,6 @@
           <thead>
             <tr>
               <th>Battlefield</th>
-              <th>Categoría</th>
               <th>% mazos</th>
             </tr>
           </thead>
