@@ -28,7 +28,7 @@ function renderDeckCard(id) {
         <button class="btn-icon btn-remove" data-id="${id}" title="Eliminar mazo">&times;</button>
       </div>
     </div>
-    <textarea class="deck-textarea" placeholder="Pega aquí el mazo en formato Tourney de riftbound.gg..." rows="16"></textarea>
+    <textarea class="deck-textarea" placeholder="Pega aquí el mazo en formato Tourney..." rows="16"></textarea>
     <div class="deck-errors hidden"></div>
   `;
   return card;
